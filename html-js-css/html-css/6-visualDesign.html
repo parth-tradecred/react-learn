@@ -1,0 +1,177 @@
+<!-- 
+text-align: justify; causes all lines of text except the last line to meet the left and right edges of the line box.
+text-align: center; centers the text
+text-align: right; right-aligns the text
+text-align: left; (the default) left-aligns the text.
+text-transform; uppercase lowercase capitalize
+
+height: 10px;
+width:10px;
+
+<strong></strong>   bold text
+<u></u>   underline
+<em></em> italic
+<s></s> strikethrough
+
+rgba( , , ,opacity/alpha level)
+opacity:0.7
+
+padding : 10px
+
+color : white
+font-size : 27px
+font-weight : 400
+
+line-height : 25px
+
+
+
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+<hr>   horizontal rule
+
+
+
+
+position : relative;
+bottom:10px        offset upwards
+right:10px         offset left
+
+position : absolute                             ||relative to parent
+top: 50px
+right: 50px
+
+position:fixed;
+top:0px;
+left:0px;
+
+Floating elements are removed from the normal flow of a document and pushed 
+to either the left or right of their containing parent element.
+float: left;
+float: right;
+
+z-index:2
+
+
+
+
+
+display : block    converts inline element to block element  
+
+margin : auto      centers a block element horizontally
+
+
+
+background:url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+
+
+ -->
+ 
+<style>
+  :root{
+      --shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  h4 {
+    text-transform: lowercase;
+    text-align: center;
+    background-color: rgba(45, 45, 45, 0.1);
+    padding: 10px;
+    font-size: 27px;
+  }
+  p {
+    position:relative;
+    bottom: 10px;
+    line-height:25px;
+    text-align: justify;
+  }
+  /* hover state of paragraph text */
+  p:hover{
+      color: red;
+  }
+  /* hover state of anchor text */
+  a:hover{
+      color: red;
+  }
+  .links {
+    text-align: left;
+    color: black;
+    opacity:0.3;
+  }
+  #thumbnail{
+    box-shadow: var(--shadow);
+  }
+  .fullCard {
+    width: 245px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+  }
+  .cardContent {
+    padding: 10px;
+  }
+  .cardText {
+    margin-bottom: 30px;
+  }
+
+
+
+  /* animation */
+  .cardAnimation {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+    position:relative;
+  }
+  #rectAnim {
+    animation-name:rainbow;
+    animation-duration:4s;
+    /* animation stays after timeout */
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  @keyframes rainbow{
+    0% {
+      background-color: blue;
+      left: 0px;
+    }
+    50% {
+      background-color: green;
+      left:25px;
+      opacity:0.01;
+    }
+    75% {
+      background-color: yellow;
+      left:-25px;
+    }
+    100% {
+      background-color: red;
+      left:0px;
+    }
+  }
+
+
+
+
+</style>
+
+
+
+
+  <div class="fullCard" id="thumbnail">
+    <div class="cardContent">
+      <div class="cardText">
+        <h4><s>Google</s>Alphabet</h4>
+        <hr>
+        <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>
+      </div>
+      <div class="cardLinks">
+        <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a><br><br>
+        <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
+      </div>
+      <div id="rectAnim" class=cardAnimation>
+      </div>
+    </div>
+  </div>
+  

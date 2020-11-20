@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<heml>
+    <head>
+        <style>
+            #container{
+                background-color: grey;
+                height: 1000px;
+                width: 1000px;
+                
+                /* flex to Position Two Boxes */
+                display: flex;
+
+                /* column,row-reverse,column-reverse */
+                flex-direction: row;
+
+                /* align elements accross main-axis ---------------------- flex-start , flex-end , space-between , space-around , space-evenly */
+                justify-content: center;
+
+                /* align items accross cross-axis     |              flex-start , flex-end , center , stretch , baseline*/
+                align-items: center;
+
+                /* a feature to split a flex item into multiple rows (or columns)                wrap, no-wrap, wrap-reverse      */
+                /* flex-wrap: wrap; */
+
+            }
+            #blue{
+                background-color: blue;
+                width: 250px;
+                height: 250px;
+
+                /* used to shrink if all child's grow larger than parent */
+                /* flex-shrink: 1; */
+                
+                /* if child's smaller than parent */
+                flex-grow: 5;
+
+                /* basis size of the element */
+                flex-basis: 10em;
+
+                /* order in which it will appaer complementary to other elements */
+                /* order: 3; */
+
+                /* property allows you to adjust 
+                each item's alignment individually,
+                instead of setting them all at once */
+                /* flex-start , flex-end , center , stretch , baseline */
+                align-self: center;
+            }
+            #red{
+                background-color: red;
+                width: 250px;
+                height: 250px;
+
+                /* flex-shrink: 2; */
+                flex-grow: 1;
+                flex-basis: 20em;
+                /* order: 2; */
+                
+                /* property allows you to adjust 
+                each item's alignment individually,
+                instead of setting them all at once */
+                /* flex-start , flex-end , center , stretch , baseline */
+                align-self:flex-end;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="blue"></div>
+            <div id="red"></div>
+            <div id="blue"></div>
+            <div id="red"></div>
+            <div id="blue"></div>
+            <div id="red"></div>
+            <div id="blue"></div>
+            <div id="red"></div>
+            <div id="blue"></div>
+            <div id="red"></div>
+        </div>
+    </body>
+</heml>

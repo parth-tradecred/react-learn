@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        HTML5 introduces more descriptive HTML tags.
+        These include 
+        main, header, footer, nav, video, article, section and others.-->
+
+    <!-- img element, 
+        and point to a specific image's 
+        URL using the src attribute. -->
+
+    <body>
+        <h2>CatPhotoApp</h2>
+        <main>
+            <p>
+                <a href="#footer" target="_blank">
+                <img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+                </a>
+            </p>
+
+
+            <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+            <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+            <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+            <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+
+        <!-- unordered and 
+            ordered lists -->
+            <div>
+                <p>Things cats love:</p>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <p>Top 3 things cats hate:</p>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+            </div>
+
+
+            <form action="/h">
+                <!-- Radio Buttons 
+                    uses value to send data
+                    with checked field -->
+                <label for="indoor"><input id="indoor" value="indoor" type="radio" name="behaviour" checked>Indoor </label>
+                <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="behaviour" >Outdoor </label>
+                <br>
+                <!-- CheckBox 
+                    uses value to send data
+                    with checked field -->
+                <label><input type="checkbox" value="Loving" name="personality" checked> Loving</label>
+                <label><input type="checkbox" value="Lazy" name="personality"> Lazy</label>
+                <label><input type="checkbox" value="Energetic" name="personality"> Energetic</label>
+                <br>
+                <!-- TextField
+                    uses name to send data
+                    with required field -->
+                <input type="text" name="url" placeholder="cat photo URL" required>
+                <!-- Submit 
+                    Button -->
+                <button type="submit">Submit</button>
+            </form>
+
+        </main>
+
+        <footer id="footer">Copyright Cat Photo App</footer>
+    </body>
+</html>

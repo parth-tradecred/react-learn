@@ -1,0 +1,62 @@
+<style>
+    .d1{
+        background:LightSkyBlue;
+        grid-row: 1/3;
+        align-self: center; /* start ,center ,end */
+        }
+    .d2{
+        background:LightSalmon;
+        grid-column: 2/6;
+        }
+    .d3{
+        background:PaleTurquoise;
+        justify-self: center; /* start ,center ,end */
+        }
+    .d4{
+        background:LightPink;
+        }
+    .d5{
+        background:PaleGreen;
+        /* grid-area: footer; */
+        grid-area: 3/1/4/6;    /*  grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at; */
+        }
+  
+    .container {
+      font-size: 40px;
+      width: 100%;
+      background: LightGray;
+      
+      display: grid;
+
+      grid-template-columns: auto 50px 10% 2fr minmax(50px,100px);
+
+      /* grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); */
+      /* grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); */
+      
+      /* grid-template-rows: 50px 50px 50px 20px; */
+      grid-template-rows: repeat(3,50px) 20px;
+      
+
+      /* grid-column-gap: 10px; */
+      /* grid-row-gap: 10px; */
+      grid-gap: 10px;
+
+      /* align-items: end; */    /* start ,center ,end */
+      /* justify-items: end; */    /* start ,center ,end */
+
+      grid-template-areas:
+        "header header header header header"
+        " .     content content content content"
+        "footer footer footer footer footer";
+
+    }
+  </style>
+  
+  <div class="container">
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4</div>
+    <div class="d5">5</div>
+  </div>
+  
